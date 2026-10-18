@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "moeas-workforce-app"
+version = "0.1.0"
+description = "MOEAS workforce app: AI literacy diploma tracking, money calculators and JMGL-governed requests (fail closed)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{ name = "Terrance Darnell Jackson, Mindful Oracle LLC" }]
+dependencies = []
+
+[project.optional-dependencies]
+jmgl = ["jmgl[model] @ git+https://github.com/inkblotmanagement-cmyk/JacksonMoralGovernanceLayer@main"]
+server = ["fastapi>=0.110", "uvicorn>=0.29", "pydantic>=2"]
+test = ["pytest>=8", "httpx>=0.27"]
+
+[project.scripts]
+moeas = "moeas.__main__:main"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/moeas"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

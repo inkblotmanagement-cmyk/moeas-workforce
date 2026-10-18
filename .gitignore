@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.env
+# runtime data (audit logs, databases) never belongs in git
+archive/
+*.db
+*.sqlite3
+*.jsonl
+!tests/**/*.jsonl
+.DS_Store

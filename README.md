@@ -145,6 +145,7 @@ Each entry defines the term as Terrance uses it in these files, names the source
 | `code/original/Mindful Oracle UI with Grace Physics intergration.txt` | Tkinter desktop UI v2 with a Grace Physics reward and mock crisis prediction. |
 | `docs/myPhone script for Dr. EJ.txt` | Short phone script offering a $1 diploma group to a clinic's patients. |
 | `src/moeas/` | Runnable package (see Code above) |
+| `examples/daily_victory_reflection.py` | Journal prompt based on the 10 Keys. It is not a forecast or a guarantee of blessing. |
 | `tests/` | pytest suite |
 | `.github/workflows/ci.yml` | CI on Python 3.10 and 3.12 |
 
